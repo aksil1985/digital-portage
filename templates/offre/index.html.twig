@@ -1,0 +1,47 @@
+
+
+	<div class="container col-md-6 mx-auto m-2 p-2">
+		<h1><span class="text-purple">Checkez nos offres d’emploi.</span><br></h1>
+
+		{% for offre in offres %}
+			<div class="card m-1 p-1">
+				<div class="card-body m-2 p-2">
+					<h5 class="text-purple m-1">{{ offre.title }}</h5>
+
+          <tr>
+		        {# <td>{{ offre.id }}</td> #}
+		        <td class="card-text m-2">{{ offre.city }}</p></td>
+            <td class="card-text m-2">{{ offre.state }}</p></td>
+            <td class="card-text m-2">{{ offre.zipcode }}</p></td>
+		        <td class="card-text m-2" >{{ offre.compensation }}</td><br>
+		        <td class="card-text m-2">{{ offre.availability }}</td>
+		        <td class="m-3">{{ offre.details }}</td>
+          </tr>
+
+          <a class="mx-2 p-2" class="card-text" href="https://fr.indeed.com/q-d%C3%A9veloppeur-full-stack-l-paris-(75)-emplois.html?vjk=590e4bdecc54caf3">En savoir plus</a>
+					<a class="btn btn-purple text-white " href="{{ path('app_offre_show', {'id': offre.id}) }}">Postuler</a>
+          {# <h6 <button onclick="toggelForm()"  id="toggle-button" class="btn btn-purple">Postuler</button></h6> #}
+				</div>
+			</div>
+
+
+{% if is_granted('ROLE_ADMIN')%}
+		      <td>
+		        <a class="btn btn-warning m-3" href="{{ path('app_offre_show', {'id': offre.id}) }}">show</a>
+		        <a class="btn btn-info" href="{{ path('app_offre_edit', {'id': offre.id}) }}">edit</a>
+		      </td>
+          	{% endif %}
+		    </tr>
+
+
+        {% else %}
+		      <tr>
+		        <td colspan="8">no records found</td>
+		      </tr>
+		    {% endfor %}
+
+ {% if is_granted('ROLE_ADMIN')%}
+		    <a class="btn btn-primary m-3" href="{{ path('app_offre_new') }}">Create new</a>
+ {% endif %}
+
+</div>

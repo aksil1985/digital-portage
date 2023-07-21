@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Postuler{% endblock %}
+
+{% block body %}
+    <h1>Postuler</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ postuler.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ postuler.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ postuler.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ postuler.telephone }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ postuler.email }}</td>
+            </tr>
+            <tr>
+                <th>File</th>
+                <td>{{ postuler.file }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-secondary mt-2" href="{{ path('app_postuler_index') }}">Back</a>
+
+    <a class="btn btn-info mt-2" href="{{ path('app_postuler_edit', {'id': postuler.id}) }}">Edit</a>
+
+    {{ include('postuler/_delete_form.html.twig') }}
+{% endblock %}

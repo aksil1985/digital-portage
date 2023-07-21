@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+{% block h1 %}Edit my profil
+{% endblock %}
+
+{% block body %}
+	<a class="btn btn-primary m-3" href="{{ path('app_profil')}}">Back</a>
+<div class="m-5">
+	{# pour afficher le formulaire  #}
+	{{ form_start(formUser) }}
+	  {{ form_row(formUser.email) }}
+	  {{ form_row(formUser.nom) }}
+	  {{ form_row(formUser.prenom) }}
+    {{ form_row(formUser.address) }}
+</div>
+
+	  <input type="Submit" value='Edit' class="btn btn-primary col-12 mt-3 m-3">
+	{{ form_end(formUser) }}
+
+{% endblock %}
+
+
+

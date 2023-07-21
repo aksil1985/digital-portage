@@ -1,0 +1,391 @@
+/* css */
+.top-margin20{
+  margin-top: 20px;
+}
+.top-margin50{
+  margin-top: 50px;
+}
+
+.navbar{
+  background-color: #F3F6FF !important;
+}
+
+.navbar  a:hover {
+  background-color: orange;
+
+}
+
+
+
+
+
+
+.postuler{
+  text-align: right;
+}
+
+.btn-purple{
+  background-color: #6456FF ;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.work{
+  color: #D4D2E3;
+}
+
+.text-purple{
+  background:90deg;
+}
+
+.span2{
+  color: #5D5A88;
+}
+
+.container-grey{
+  background-color: #E7E6F2;
+}
+
+.title{
+  margin-top: 80px;
+  color: #534B9A;
+  letter-spacing: 1px;
+}
+
+.title1{
+  letter-spacing: 1px;
+  color: #9795B5;
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.form-control{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 30px 20px 10px;
+  gap: 10px;
+  width: 358px;
+  height: 40px;
+  background: #F5F5F8;
+  border-radius: 5px;
+}
+
+.home{
+  text-align: left;
+  margin-top: 60px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: black;
+}
+
+.card{
+  width: 200px;
+  height: 250px;
+  border-radius:10px;
+  padding: 30px, 10px;
+  margin: 10px;
+
+}
+
+.card-color{
+  background-color:#5D5A88;
+}
+
+.card-title{
+  color: #ED6C70;
+}
+
+.card-text{
+color:#5D5A88;
+}
+
+.footer {
+  list-style-type: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.card{
+  background-color: #F3F6FF;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 40rem
+}
+
+.img1{
+  display: flex;
+  padding-top: 200px;
+  justify-content: space-around;
+  margin-right: -620px;
+}
+
+.img2{
+height: 355px;
+text-align: left;
+margin-left: 240px;
+width: 150px;
+border-radius: 10px;
+ }
+
+.h11{
+  margin-top: 300px;
+  color: black;
+  font-weight: 900;
+}
+
+.h55{
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card-color{
+  border-radius: 20px;
+  background: #5D5A88;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 8px;
+  margin: 5px;
+  width: 560px;
+}
+
+.card-body h5{
+  color:#ED6C70
+}
+
+.frame{
+  background: #E7E6F2;
+  border-radius: 20px;
+  padding-top: 30px;
+  color: #5D5A88;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+#formulaire-contact{
+  display: none;
+}
+
+.Liberté{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.sécurité{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.Tranquillité{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ul{
+  list-style-type: disc;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 10px;
+  line-height: 2.6;
+  list-style-type: none;
+}
+
+.avantages{
+  color: #000 !important;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 2.25em;
+  line-height: 1.25;
+  text-transform: none;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+
+.copyright{
+  color: white;
+  text-align: center;
+  background-color: #9795B5;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.image5{
+  width: 900px;
+  margin-left: -180px;
+}
+
+.secteur1{
+  text-align: left;
+  margin-top: 120px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+}
+
+.secteur2{
+  line-height: 2.3;
+  letter-spacing: 1px;
+}
+
+.textColor{
+  color: #ED6C70;
+}
+
+.porte1{
+  margin-left: 90px;
+  color: #000;
+  font-size: 500%;
+  margin-bottom: 30px;
+}
+
+.porte2{
+  margin-left: 90px;
+  font-size: 300%;
+}
+
+.porte3{
+  margin-left: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portagees{
+  text-align: left;
+  letter-spacing: .8px;
+  line-height: 2;
+  margin-left: 160px;
+}
+
+.imgPortage{
+  text-align:center;
+  width: 200px;
+}
+
+.fonctionne{
+  margin-top: 120px;
+  margin-left: 300px;
+}
+
+.fonct1{
+  letter-spacing: 1px;
+  line-height: 2.5;
+}
+
+.advantage{
+  margin-left: 300px;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.btn-info1{
+  margin-left: 300px;
+  background-color: blue;
+  color: #D4D2E3;
+}
+
+.avantage{
+  margin-left: 250px;
+  margin-top: 10px;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-family: Poppins,Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.inconvh1{
+  margin-left: 300px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+.inconv{
+  margin-left: 250px;
+  letter-spacing: 1px;
+  line-height: 2;
+  font-family: Poppins,Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+
+
+.mission{
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-left: 300px;
+  margin-top: 130px;
+}
+
+.mission1{
+letter-spacing: 1px;
+line-height: 2.8;
+margin-left: 290px;
+font-family: Poppins,Helvetica, Arial, Sans-Serif, serif;
+font-weight: 300;
+font-size: 16px;
+margin-right: 200px;
+}
+
+.ressources{
+  letter-spacing: 2px;
+  line-height: 2.8;
+  margin-left: 200px;
+  margin-right: 60px;
+  font-family: Poppins,Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.communaute{
+  margin-left: 200px;
+  font-family: Poppins,Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.QuiSommesNous, .sociale{
+  margin-top: 80px;
+  letter-spacing: 2px;
+  line-height: 2.8;
+  margin-left: 200px;
+  margin-right: 60px;
+  font-family: Poppins,Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.sociale{
+  letter-spacing: 2px;
+  line-height: 2.8;
+  font-family: Poppins,Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 300;
+  font-size: 16px;
+}

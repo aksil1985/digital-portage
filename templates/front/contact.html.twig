@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+{% block titre %}contact{% endblock %}
+
+{% block body %}
+
+<div class="nav-link p-3 m-3">Contactez-nous :<br>N’hésitez pas à nous contacter via la formulaire, nous vous répondrons rapidement…</div>
+<div class="p-3 m-3">
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="nom" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="nom">
+  </div>
+  <div class="col-md-6">
+    <label for="prenom" class="form-label">Prenom</label>
+    <input type="text" class="form-control" id="prenom">
+  </div>
+  <div class="col-6">
+    <label for="inputAddress" class="form-label">Email</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="">
+  </div>
+  <div class="col-6">
+    <label for="inputAddress2" class="form-label">Telephone</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+  </div>
+
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Votre demande</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+</div>
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+       En cochant cette case, je reconnais avoir pris connaissance des Conditions Générales d'Utilisation du site ainsi que sa Politique de Confidentialité et je les accepte.
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
+
+
+
+
+{% endblock %}

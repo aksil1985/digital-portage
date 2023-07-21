@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My Profil{% endblock %}
+{% block h1 %}My Profil{% endblock %}
+
+{% block body %}
+
+<ul class="list-group">
+  <li class="list-group-item m-3">Email : {{ app.user.email }}</li>
+  <li class="list-group-item m-3">Nom : {{ app.user.nom }}</li>
+  <li class="list-group-item m-3">Prenom : {{ app.user.prenom }}</li>
+  <li class="list-group-item m-3">City : {{ app.user.city }}</li>
+   <li class="list-group-item m-3">State : {{ app.user.state }}</li>
+    <li class="list-group-item m-3">ZipCode : {{ app.user.zipCode }}</li>
+</ul>
+
+<div class="row justify-content-between m-0 mt-3">
+  <a class="btn btn-primary col-4 m-3" href="{{ path('profil_edit') }}">Edit profil</a>
+  <a class="btn btn-primary col-4 m-3" href="{{ path('password_edit') }}">Edit password</a>
+
+</div>
+
+{% endblock %}

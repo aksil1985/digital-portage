@@ -1,0 +1,27 @@
+
+          Checklist
+
+      FRONT-END
+1- Maquetter une application   ======> DONE
+2- Realiser une interface utilisateur web statique et adaptable ======> DONE
+3- Developper une interface utilisateur web dynamique =======>
+4- Realiser une interface utilisateur avec une solution de gestion de contenu(e-commerce)=====>
+
+      BACK-END
+1- Creer une base de donnees ======> DONE
+2- Developer les composants d'acces aux donnees ======>
+3- Developer la partie back-end  ========>
+4- Elaborer et mettre en oeuvre des composants d'un site (e-commerce) ========>
+
+
+
+
+
+1- Faire la relation entre User et Offre
+2- Finir le MCD.
+3- Envoyer tt sur la base de donnees.
+4- Ajouter propertie avatar dans user table
+5- Finir le cahier de charge
+5- Finir le dossier proffesuinnel
+6- Le site doit etre responsive
+7- Finir le css

@@ -1,0 +1,342 @@
+{% extends "base.html.twig" %}
+
+{% block title %}DigitalPortage{% endblock %}
+
+{% block h1 %}{% endblock %}
+
+{% block body %}
+
+
+<div class="container col-md-10 mx-auto m-5">
+  <div class="row">
+    <div class="col">
+      <div class="text-right">
+
+        <h1 class="title">Concentrez-vous <br>sur vos <span style="color:#6456FF">projets,<br></span> pas vos papiers.</h1>
+        <h6 class="title1">Digital Portage s'occupe de toute la partie ennuyeuse pour <br>vous laisser a votre préocupation majeure.</h6>
+
+        <div class="container-fluid mb-3">
+          <form action="http://www.google.com/search" method="get" class="d-flex">
+            <input type="text" class="form-control" placeholder="Dévelopeur web, Designer graphyque,SEO Manager....." aria-label="Recipient's username" aria-describedby="button-addon2" name="q">
+            <button class="btn1 btn-outline-secondary btn-purple" type="submit" id="button-addon2">Recherche</button>
+          </form>
+        </div>
+
+
+        <h3>Recherches populaires</h3>
+        <a class="btn btn-warning p-2 m-2" href="https://proxify.io/get-fullstack-developers/" role="button">Dévelopeur</a>
+        <a class="btn btn-primary p-2 m-2" href="https://www.bestdiscoveries.co/" role="button">Graphiste</a>
+        <a class="btn btn-danger p-2 m-2" href="https://www.usemotion.com/" role="button">Motion</a>
+        <a class="btn btn-purple p-2 m-2" href="https://www.lesjeudis.com/" role="button">Commercial</a>
+        <a class="btn btn-success p-2 m-2" href="https://lp.experteer.com/" role="button">CEO</a>
+
+        <h1 class="work">Working with the best</h1>
+        <a class="btn p-2 m-2 text-dark btn-google" href="https://digitalportage.fr/" ><i class="fa fa-google"></i>Google</a>
+        <a class="btn p-2 m-2 text-dark btn-facebook" href="https://www.facebook.com/webportageportagesalarial/"><i class="fa fa-facebook"></i>Facebook</a>
+        <a class="btn  p-2 m-2 text-dark btn-youtube" href="https://www.youtube.com/channel/UCisI7wpgwiLVZ-T5L14MVxg"><i class="fa fa-youtube"></i>Youtube</a>
+        <a class="btn p-2 m-2 text-dark btn-webflow"  href="https://webflow.com/?r=0"  ><i class="fa fa-webflow"></i>webflow</a>
+        <a class="btn p-2 m-2 text-dark btn-webflow"  href="https://www.linkedin.com/company/digitalportage/about/"  ><i class="fa fa-Linkdin"></i>Linkdin</a>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="container">
+        <div class="row">
+          <div class="col top-margin20">
+            <img src="{{ asset('imagess/portage1.png') }}" alt="" class="img500">
+          </div>
+            <div class="col top-margin50">
+              <img src="{{ asset('imagess/portage2.png') }}" alt="" class="img500">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class=" container-grey">
+  <div class="container">
+      <h1><span class="title">Digital Portage,</span> <br>
+      bien plus que du portage salarial.</h1>
+
+      <div class="container col-md-10 mx-auto">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 13rem;">
+              <div class="card-body">
+                <h5 class="card-title color:" href="">Découvrez</h5>
+                <p class="card-text tex">des projets inspirants realisés.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem;">
+              <div class="card-body">
+                <h5 class="card-title" href="">Guides</h5>
+                <p class="card-text">détaillés couvrant des sujets commerciaux.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem;">
+              <div class="card-body">
+                <h5 class="card-title" href="">Apprenez</h5>
+                <p class="card-text">des cours en ligne dispensés par des experts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem;">
+              <div class="card-body">
+                <h5 class="card-title" href="">Créez</h5>
+                <p class="card-text">votre logo instantanement.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem;">
+              <div class="card-body">
+                <h5 class="card-title" href="">Connectez</h5>
+                <p class="card-text">-vous a notre équipe et a la communauté.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem;">
+              <div class="card-body">
+                <h5 class="card-title" href="">Podcast</h5>
+                <p class="card-text">et conseils des meilleurs esprits d'entreprise.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem;">
+              <div class="card-body">
+                <h5 class="card-title" href="">Blog</h5>
+                <p class="card-text">news,informations et témoignages de la communauté.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem;">
+              <div class="card-body">
+                <h5 class="card-title">Un seul</h5>
+                <p class="card-text">endroit pour manager votre business.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ {% include "/offre/index.html.twig" %}
+
+
+  {% include "/talent/index.html.twig" %}
+
+{# <div class=" container-grey">
+  <div class="container col-md-10 mx-auto m-5 p-5">
+    <h1><span class="text-purple ">Productif comme vous le voulez.</span> <br>
+    Compétents et talentueux, nous vous facilitons la tâche.</h1>
+    <div class="row m-3 p-3">
+      <div class="col">
+        <div class="card " style="width: 14rem;">
+          <div class="card-body">
+            <h5 class="card-title">Je suis</h5>
+            <p class="card-text">Développeur web.</p>
+            <img src="images/deve1.png" class="w-80 mb-2">
+          </div>
+        </div>
+      </div>
+    <div class="col">
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">Je suis</h5>
+          <p class="card-text">Webdesigner.</p>
+          <img src="images/web1.png" class="w-80 mb-2">
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">Je suis</h5>
+          <p class="card-text">Musicien.</p>
+          <img src="images/mus1.png" class="w-80 mb-2">
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">Je suis</h5>
+          <p class="card-text">Écrivain.</p>
+          <img src="images/Ecrivain.png" class="w-80 mb-2">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">Je suis</h5>
+          <p class="card-text">Artiste</p>
+          <img src="images/artiste.png" class="w-80 mb-2">
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">Je suis</h5>
+          <p class="card-text">Logo designer.</p>
+          <img src="images/designer.png" class="w-80 mb-2">
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">Je suis</h5>
+          <p class="card-text">Marketing CEO.</p>
+          <img src="images/marketing.png" class="w-80 mb-2">
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">Je souhaite</h5>
+          <p class="card-text">devenir vendeur.</p>
+          <button class="btn btn-purple ">Inscrivez-vous</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div> #}
+
+
+
+
+<section class=" container">
+  <div class="container mx-auto pt-5">
+      <h1 class="text-center"><span class="text-purple">Simulez en direct votre portage salarial.</span></h1>
+      <h3 class="text-center"><span class="text-purple">La simulation n'engage pas Digital Portage et n'est qu'une estimation.Pour avoir un resultat fiable,faites estimer par Digital Portage</span></h3>
+         <div class="row pt-4 d-none d-md-flex ms-8">
+         <div class="container-grey"></div>
+           <div class="frame col-md-3 container-grey ">
+              <h5 class="card-title"></h5>
+
+              <div class="row p-3 pt-3">
+                <label>Facturation encaissée</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Frais professionnels</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Taux de frais de gestion(min.3%)</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Frais de gestion</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Disponible consultant</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Disponible masse salariale</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Charges patronales</label>
+                <input type="text" class="form-control">
+
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Charges salariales</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Salaires brut</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="row p-3 pt-3">
+                <label>Salaires net</label>
+                <input type="text" class="form-control">
+              </div>
+          </div>
+
+<div class="col-md-6 ">
+
+    <div class="card container-grey" style="width: 35rem">
+      <div class="card-body card-body p-2">
+        <h5 class=""><span>Chiffres</span> d’affaires</h5>
+        <h6 <span class="btn btn p-1">Commission de gestion..........................................0,00 €</h6> <br>
+        <h6 <span class="btn btn p-1">Frais complémentaires...........................................0,00 €</h6><br>
+        <h6 <span class="btn btn p-1">Achat matériel informatique (HT)............................0,00 €</h6><br>
+      </div>
+    </div>
+
+    <div class="card container-grey" style="width: 35rem ;">
+      <div class="card-body card-body p-2">
+        <h5 class="">Masse salariale</h5>
+        <h6 <span class="btn btn p-1">Salaire Brut..................................................0,00 €</h6> <br>
+        <h6 <span class="btn btn p-1">Charges patronales......................................0,00 €</h6><br>
+        <h6 <span class="btn btn p-1">Provisions RC Net.....................................0,00 €</h6><br>
+
+      </div>
+    </div>
+
+    <div class="card container-grey" style="width: 35rem ;">
+      <div class="card-body p-2 ">
+        <h5 class="">Perçu Net</h5>
+        <h6 <span class="btn btn p-1">Charges sociales...................................0,00 €</h6> <br>
+        <h6 <span class="btn btn p-1">Salaire Net(avant impôts).........................0,00 €</h6><br>
+        <h6 <span class="btn btn p-1">Impôts sur le revenu................................0,00 €</h6><br>
+        <h6 <span class="btn btn p-1">Frais remboursès......................................0,00 €</h6><br>
+        <h6 <span class="btn btn p-1">Impots sur le revenu............................0,00 €</h6><br>
+      </div>
+    </div>
+
+
+    <div class="card-color" style="width: 35rem" >
+      <div class="card-body p-4">
+        <h5 class="text-white">Recapitulatif</h5>
+        <h6 class="text-white"<span class="btn btn p-1">Taux de transformation.........................................0,00 €</h6> <br>
+        <h6 class="text-white"<span class="btn btn p-1">Allocation chômage éstimée(intercontrat)...........0,00 €</h6><br>
+        <h6 class="text-white"<span class="btn btn p-1">Salaire annuel Brut...............................................0,00 €</h6><br>
+      </div>
+    </section>
+
+
+{% endblock %}

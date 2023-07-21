@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SalarySimulatorController!{% endblock %}
+
+{% block body %}
+{% extends 'base.html.twig' %}
+
+{% block title %}Salary Simulator{% endblock %}
+
+{% block body %}
+    <h1>Salary Simulator</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.baseSalary) }}
+    {{ form_row(form.bonus) }}
+    {{ form_row(form.deductions) }}
+
+    <button type="submit">Calculate Salary</button>
+    {{ form_end(form) }}
+{% endblock %}
+
+{% endblock %}

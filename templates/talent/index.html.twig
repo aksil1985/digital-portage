@@ -1,0 +1,53 @@
+ {# {% extends 'base.html.twig' %} #}
+
+{# {% block title %}Talent index{% endblock %}
+
+{% block body %} #}
+
+<div class=" container-grey">
+  <div class="container col-md-10 mx-auto m-5 p-5">
+    <h1><span class="text-purple ">Productif comme vous le voulez.</span> <br>
+    Compétents et talentueux, nous vous facilitons la tâche.</h1>
+
+
+
+    {% for talent in talents %}
+      <div class="row m-3 p-3">
+        <div class="col">
+          <div class="card " style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="text-purple m-1">{{ talent.title }}</h5>
+              <tr>
+		          {# <td class="card-text m-2">{{ talent.id }}</p></td> #}
+                <td class="card-text m-2">{{ talent.metier }}</p></td>
+                 {# <td class="card-text m-2">{{ talent.updatedAt }}</p></td> #}
+                <td class="card m-2"><img src="{{ asset('image/' ~ talent.imageName) }}" ></p></td>
+                <td class="card m-2">{{ talent.imageFile }}</p></td>
+              </tr>
+	          </div>
+			    </div>
+        </div>
+      </div>
+
+
+
+      {% if is_granted('ROLE_USER')%}
+		    <td>
+		      <a class="btn btn-warning m-3" href="{{ path('app_talent_show', {'id': talent.id}) }}">show</a>
+		      <a class="btn btn-info" href="{{ path('app_talent_edit', {'id': talent.id}) }}">edit</a>
+		    </td>
+      {% endif %}
+		    </tr>
+
+      {% else %}
+		    <tr>
+		      <td colspan="8">no records found</td>
+		    </tr>
+		{% endfor %}
+
+    {% if is_granted('ROLE_USER')%}
+		    <a class="btn btn-primary m-3" href="{{ path('app_talent_new') }}">Create new</a>
+    {% endif %}
+  </div>
+</div>
+{# {% endblock %} #}

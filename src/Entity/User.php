@@ -37,19 +37,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $prenom = null;
 
-
-
     #[ORM\Column(length: 255)]
     private ?string $fonction = null;
 
-
-
-
-
     #[ORM\Column(length: 255)]
     private ?string $city = null;
-
-
 
     #[ORM\Column(length: 255)]
     private ?string $State = null;
@@ -59,12 +51,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\OneToMany(mappedBy: 'user', targetEntity: Postuler::class)]
     private Collection $postuler;
-
-
-
-
-
-
 
     public function __construct()
     {
@@ -166,10 +152,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-
-
-
-
     public function getFonction(): ?string
     {
         return $this->fonction;
@@ -181,9 +163,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
-
-
-
 
     public function getCity(): ?string
     {
@@ -250,11 +229,4 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
-
-
-
-
-
-
-
 }

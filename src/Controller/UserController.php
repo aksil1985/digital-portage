@@ -38,8 +38,6 @@ class UserController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
           $password = uniqid();
-          // dd($password);
-
           $user->setPassword(
             $userPasswordHasher->hashPassword(
                 $user,

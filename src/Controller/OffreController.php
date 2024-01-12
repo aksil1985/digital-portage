@@ -49,7 +49,6 @@ class OffreController extends AbstractController
     {
       $routeParams = $request->attributes->get('_route_params');
       $user = $this->getUser();
-      //$userId = $user->getId();
       $offre = $offreRepository->find($id);
       $postuler = new Postuler();
 

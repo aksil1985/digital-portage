@@ -29,9 +29,6 @@ class Offre
     private ?string $details = null;
 
 
-
-
-
     #[ORM\Column(length: 255)]
     private ?string $city = null;
 

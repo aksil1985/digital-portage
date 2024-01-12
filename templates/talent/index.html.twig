@@ -9,8 +9,6 @@
     <h1><span class="text-purple ">Productif comme vous le voulez.</span> <br>
     Compétents et talentueux, nous vous facilitons la tâche.</h1>
 
-
-
     {% for talent in talents %}
       <div class="row m-3 p-3">
         <div class="col">
@@ -29,9 +27,7 @@
         </div>
       </div>
 
-
-
-      {% if is_granted('ROLE_USER')%}
+      {% if is_granted('ROLE_ADMIN')%}
 		    <td>
 		      <a class="btn btn-warning m-3" href="{{ path('app_talent_show', {'id': talent.id}) }}">show</a>
 		      <a class="btn btn-info" href="{{ path('app_talent_edit', {'id': talent.id}) }}">edit</a>
@@ -45,7 +41,7 @@
 		    </tr>
 		{% endfor %}
 
-    {% if is_granted('ROLE_USER')%}
+    {% if is_granted('ROLE_ADMIN')%}
 		    <a class="btn btn-primary m-3" href="{{ path('app_talent_new') }}">Create new</a>
     {% endif %}
   </div>

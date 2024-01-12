@@ -243,57 +243,84 @@
          <div class="container-grey"></div>
            <div class="frame col-md-3 container-grey ">
               <h5 class="card-title"></h5>
-
+              {{ form_start(form) }}
+       
               <div class="row p-3 pt-3">
-                <label>Facturation encaissée</label>
-                <input type="text" class="form-control">
+              {{ form_row(form.tauxJournalierMoyen) }}
               </div>
 
               <div class="row p-3 pt-3">
-                <label>Frais professionnels</label>
-                <input type="text" class="form-control">
+                {{ form_row(form.joursTravailMois) }}
               </div>
 
               <div class="row p-3 pt-3">
-                <label>Taux de frais de gestion(min.3%)</label>
-                <input type="text" class="form-control">
+                {{ form_row(form.tauxChargesSociales) }}
               </div>
 
               <div class="row p-3 pt-3">
-                <label>Frais de gestion</label>
-                <input type="text" class="form-control">
+                {{ form_row(form.fraisGestion) }}
               </div>
 
               <div class="row p-3 pt-3">
+                {{ form_row(form.disponibleConsultant) }}
+              </div>
+
+              <div class="row p-3 pt-3">
+                {{ form_row(form.disponibleMasseSalariale) }}
+              </div>
+
+               <div class="row p-3 pt-3">
+                {{ form_row(form.chargesPatronales) }}
+              </div>
+
+              <div class="row p-3 pt-3">
+                {{ form_row(form.chargesSalariales) }}
+              </div>
+
+              <div class="row p-3 pt-3">
+                {{ form_row(form.salairesBrut) }}
+              </div>
+
+              <div class="row p-3 pt-3">
+                {{ form_row(form.salairesNet) }}
+              </div>
+
+               <div class="row p-3 pt-3">
+                {{ form_row(form.salaireAnuelleBrut) }}
+              </div>
+
+              {# <div class="row p-3 pt-3">
                 <label>Disponible consultant</label>
                 <input type="text" class="form-control">
-              </div>
+              </div> #}
 
-              <div class="row p-3 pt-3">
+              {# <div class="row p-3 pt-3">
                 <label>Disponible masse salariale</label>
                 <input type="text" class="form-control">
-              </div>
+              </div> #}
 
-              <div class="row p-3 pt-3">
+              {# <div class="row p-3 pt-3">
                 <label>Charges patronales</label>
                 <input type="text" class="form-control">
+              </div> #}
 
-              </div>
-
-              <div class="row p-3 pt-3">
+              {# <div class="row p-3 pt-3">
                 <label>Charges salariales</label>
                 <input type="text" class="form-control">
-              </div>
+              </div> #}
 
-              <div class="row p-3 pt-3">
+              {# <div class="row p-3 pt-3">
                 <label>Salaires brut</label>
                 <input type="text" class="form-control">
-              </div>
+              </div> #}
 
-              <div class="row p-3 pt-3">
+              {# <div class="row p-3 pt-3">
                 <label>Salaires net</label>
                 <input type="text" class="form-control">
-              </div>
+              </div> #}
+              
+                <button type="submit" class="btn btn-primary">Estimer</button>
+               {{ form_end(form) }}
           </div>
 
 <div class="col-md-6 ">
@@ -310,8 +337,8 @@
     <div class="card container-grey" style="width: 35rem ;">
       <div class="card-body card-body p-2">
         <h5 class="">Masse salariale</h5>
-        <h6 <span class="btn btn p-1">Salaire Brut..................................................0,00 €</h6> <br>
-        <h6 <span class="btn btn p-1">Charges patronales......................................0,00 €</h6><br>
+        <h6 <span class="btn btn p-1">Salaire Brut..................................................{{ estimation.salaireBrutMensuel }}€</h6> <br>
+        <h6 <span class="btn btn p-1">Charges patronales......................................0,00 {{ estimation.chargesPatronales }}€</h6><br>
         <h6 <span class="btn btn p-1">Provisions RC Net.....................................0,00 €</h6><br>
 
       </div>
@@ -320,10 +347,10 @@
     <div class="card container-grey" style="width: 35rem ;">
       <div class="card-body p-2 ">
         <h5 class="">Perçu Net</h5>
-        <h6 <span class="btn btn p-1">Charges sociales...................................0,00 €</h6> <br>
-        <h6 <span class="btn btn p-1">Salaire Net(avant impôts).........................0,00 €</h6><br>
+        <h6 <span class="btn btn p-1">Charges sociales................................... {{ estimation.chargesSociales }}€</h6> <br>
+        <h6 <span class="btn btn p-1">Salaire Net(avant impôts).........................{{ estimation.salaireNet }} €</h6><br>
         <h6 <span class="btn btn p-1">Impôts sur le revenu................................0,00 €</h6><br>
-        <h6 <span class="btn btn p-1">Frais remboursès......................................0,00 €</h6><br>
+        <h6 <span class="btn btn p-1">Frais de gestion......................................{{ estimation.fraisGestion }}€</h6><br>
         <h6 <span class="btn btn p-1">Impots sur le revenu............................0,00 €</h6><br>
       </div>
     </div>
@@ -334,9 +361,8 @@
         <h5 class="text-white">Recapitulatif</h5>
         <h6 class="text-white"<span class="btn btn p-1">Taux de transformation.........................................0,00 €</h6> <br>
         <h6 class="text-white"<span class="btn btn p-1">Allocation chômage éstimée(intercontrat)...........0,00 €</h6><br>
-        <h6 class="text-white"<span class="btn btn p-1">Salaire annuel Brut...............................................0,00 €</h6><br>
+        <h6 class="text-white"<span class="btn btn p-1">Salaire annuel Brut...............................................{{ estimation.salaireAnuelleBrut }} €</h6><br>
       </div>
     </section>
-
 
 {% endblock %}
